@@ -1,0 +1,103 @@
+.twitterstream{
+  // padding: 0px 0px 0px 0px;
+  padding:  0px 20px 20px 20px;
+
+  // height: calc(100vh - 80px) !important;
+}
+.title{
+  height: 80px;
+  // background-color: antiquewhite;
+  button{
+    color: #1DA1F2;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+  }
+  .timer{
+    position: absolute;
+    right: 30px;
+  }
+}
+
+
+.bigrow{
+  // height: calc(100vh - 160px) !important;
+
+  .left{
+    padding-top: 10px;
+    // margin-left: -20px;
+    background-color: white;
+    border-radius: 20px 0px 0px 20px;
+    .graph-title{
+      // background-color: white;
+      // border-radius: 20px 20px 0px 0px;
+    }
+    .realtime-graph{
+      // background-color: white;
+      // border-radius: 0px 0px 20px 20px;
+    }
+
+  }
+
+  // right
+  .tweet-col{
+    // height: calc(100vh - 160px) !important;
+    border-radius: 0px 20px 0px 0px;
+    background-color: #001529;
+    overflow: scroll !important;
+    .container-title{
+      background-color: #001529;
+      font-size: 20px;
+      color: white;
+      position: sticky;
+      // width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+    }
+
+    .container{
+      overflow: scroll !important;
+      height: 1000px;
+      padding: 0px 20px 20px 20px;
+      .tweet-blog{
+        padding: 10px 15px 5px 10px;
+        border: solid;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        text-align: left;
+        background-color: white;
+        .text{
+          border-bottom: solid 2px rgb(167, 167, 167);
+        }
+        .username{
+          font-size: 12px;
+          margin: 6px 0px;
+          position: relative;
+          a{
+            // padding-top: -10px;
+            font-size: 24px;
+            position: absolute;
+            top: -6px;
+            right: 0;
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            color: #1DA1F2;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-statistic-title{
+  font-size: 18px;
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}

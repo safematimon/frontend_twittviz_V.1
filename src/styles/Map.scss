@@ -1,0 +1,61 @@
+.map{
+  min-height: calc(100vh - 160px);
+  background-color: brown;
+  .description{
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    height: 90px;
+    width: 180px;
+    text-align: left;
+    // align-items: center;
+    // padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .dot{
+      padding: 7px 10px;
+      .ant-badge-status-dot{
+        border: solid;
+        height: 22px;
+        width: 22px;
+        margin-bottom: 3px;
+      }
+      .ant-badge-status-text{
+        font-size: 20px;
+      }
+    }
+
+  }
+  .map-component{
+    height: calc(100vh - 80px);
+    width: 100%;
+    padding-bottom: -20px;
+  }
+  .tooltip{
+    font-size: 20px !important;
+  }
+}
+
+.ant-modal-content {
+  min-width: 370px;
+  max-width: 650px;
+}
+.ant-modal-title {
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .description{
+    width: 135px !important ;
+    .ant-badge-status-text{
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  Table{
+    font-size: 12px !important;
+  }
+}

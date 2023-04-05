@@ -1,0 +1,124 @@
+.home{
+  // background-color: gray;
+  min-height: calc(100vh - 80px);
+  .topic{
+    padding: 20px 0;
+    font-size: 24px;
+    // background-color: antiquewhite;
+  }
+  
+  .slider-wrap{
+    padding: 20px 120px;
+    .slider{
+      .ant-slider-rail {
+        background: #00acee;
+        height: 9px;
+      }
+      // current Range
+      .ant-slider-track {
+        background-color: rgb(185, 185, 185);
+        height: 9px;
+      }
+      .ant-slider-dot {
+        border: 2px solid rgb(185, 185, 185);
+        width: 12px;
+        height: 12px;
+      }
+      // current place
+      .ant-slider-handle {
+        background: #ffffff;
+        border: 3px solid #0077a7;
+        width: 20px;
+        height: 20px;
+      }
+      .ant-slider-mark-text{
+        white-space: nowrap;
+      }
+    }
+  }
+  .slider-wrap2{
+    display: none;
+    padding: 20px 120px;
+    .slider2{
+      .ant-slider-rail {
+        background: #00acee;
+        height: 9px;
+      }
+      // current Range
+      .ant-slider-track {
+        background-color: rgb(185, 185, 185);
+        height: 9px;
+      }
+      .ant-slider-dot {
+        border: 2px solid rgb(185, 185, 185);
+        width: 12px;
+        height: 12px;
+      }
+      // current place
+      .ant-slider-handle {
+        background: #ffffff;
+        border: 3px solid #0077a7;
+        width: 20px;
+        height: 20px;
+      }
+      .ant-slider-mark-text{
+        white-space: nowrap;
+      }
+    }
+  }
+
+  // table
+  .table-wrap{
+    // here
+    padding: 0px 150px;
+    Table{
+      font-size: 16px;
+    }
+    //all cell
+    .ant-table-cell{
+      border-bottom: solid 2px rgba(78, 78, 78, 0.226);
+    }
+    //head column
+    .ant-table-column-has-sorters{
+      // background-color: #00acee;
+      font-size: 18px;
+      border-top: solid 3px rgb(78, 78, 78);
+      border-bottom: solid 3px rgb(78, 78, 78);
+    }
+  }
+
+}
+
+p{
+  color: blue;
+  cursor: pointer;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .slider-wrap{
+    padding: 20px 30px !important;
+  }
+  .table-wrap{
+    padding: 0px 50px !important;
+  }
+}
+@media (max-width: 600px) {
+  .table-wrap{
+    padding: 0px 0px !important;
+    Table{
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .slider-wrap{
+    display: none;
+  }
+  .slider-wrap2{
+    display: block !important;
+    padding: 20px 30px !important;
+
+  }
+}

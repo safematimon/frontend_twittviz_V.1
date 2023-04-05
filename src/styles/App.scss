@@ -1,0 +1,120 @@
+@import '~antd/dist/antd.css';
+
+*{
+  // font-family: kanit, serif;
+  font-family: Nunito, serif;
+}
+
+.App {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  // background-color: rgb(0, 255, 76) !important;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #001529;
+  // .name-app{
+  //   width: 50px;
+  //   font-size: 20px;
+  //   color: red;
+  //   display: inline;
+  //   float: left;
+  //   padding-left: 20px;
+  // }
+  .logo{
+    margin-left: 20px;
+    width: 75px ;
+  }
+  .menu{
+    font-size: 24px;
+    display: inline;
+    float: left;
+    padding-left: 20px;
+    img{
+      width: 35px;
+      padding-bottom: 5px;
+      margin-right: 5px;
+    }
+    .menu-link{
+      color: white;
+    }
+    .menu-link:hover{
+      color: rgb(18, 112, 189);
+    }
+  }
+  // here
+  .form{
+    margin-left: 15px;
+    height: 55px;
+    font-size: 20px;
+    // background-color: aqua;
+  }
+
+  input{
+    padding: 0;
+    margin: 0;
+    border-radius: 50px 0px 0px 50px ;
+    height: 55px;
+    // font-size: 17px;
+    color: black;
+    text-indent: 15px;
+    border: none;
+    outline: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+  input:active{
+    outline: none;
+  }
+
+  button{
+    padding: 0;
+    height: 55px;
+    width: 52px;
+    border-radius: 0px 50px 50px 0px ;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    // font-size: 20px;
+  }
+}
+
+@media (max-width: 770px) {
+  .menu{
+    font-size: 20px;
+  }
+  .menu-icon{
+    display: none;
+  }
+  .form{
+    .textInput{
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .logo{
+    display: none !important;
+  }
+}
+
+.content{
+  min-height: calc(100vh - 80px);
+}
+
+.footer{
+  background-color: #001529;
+  color: white;
+  height: 80px;
+}

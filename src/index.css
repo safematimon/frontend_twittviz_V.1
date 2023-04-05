@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Kanit";   /*Can be any text*/
+  src: local("Kanit"),
+    url("../public/Kanit/Kanit-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";   /*Can be any text*/
+  src: local("Nunito"),
+    url("../public/nunito/Nunito-Bold.ttf") format("truetype");
+}
